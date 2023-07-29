@@ -10,3 +10,7 @@
 
 ## Steps to shutdown deepracer spot instance
 - sudo shutdown now
+
+## Deepracer log guru
+D:\machine learning\Deepracer\deepracer-log-guru>python.exe -m src.main.guru
+https://github.com/aws-deepracer-community/deepracer-log-guru/blob/master/docs/installation.md
