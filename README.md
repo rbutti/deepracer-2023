@@ -14,7 +14,7 @@ https://github.com/aws-deepracer-community/deepracer-race-data/blob/main/raw_dat
 -  ./create-spot-instance.sh base firstmodelspot 30
    Current : ./create-spot-instance.sh racingwarriors-ravi-base racingwarriors-ravi-model-spot 30
 ```
-   ./create-standard-instance.sh racingwarriors-ravi-base-v2 RacingWarriors-Ravi-Model-V1 60
+   ./create-standard-instance.sh racingwarriors-ravi-base-v3 RacingWarriors-Ravi-Model-V4 60
 ```
 
 ## Steps to shutdown deepracer spot instance
