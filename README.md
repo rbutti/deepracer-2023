@@ -1,4 +1,8 @@
 # deepracer-2023
+Track names
+```
+https://github.com/aws-deepracer-community/deepracer-race-data/blob/main/raw_data/tracks/README.md
+```
 
 ## Steps to create deepracer spot instance
 - git clone https://github.com/aws-deepracer-community/deepracer-on-the-spot
