@@ -25,3 +25,7 @@ https://github.com/aws-deepracer-community/deepracer-race-data/blob/main/raw_dat
 D:\machine learning\Deepracer\deepracer-log-guru>python.exe -m src.main.guru
 ```
 https://github.com/aws-deepracer-community/deepracer-log-guru/blob/master/docs/installation.md
+
+## Track Analysis
+https://github.com/cdthompson/deepracer-k1999-race-lines
+
