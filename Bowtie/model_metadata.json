@@ -1,0 +1,123 @@
+{
+  "action_space": [
+    {
+      "steering_angle": 9.0962,
+      "speed": 0.6638,
+      "index": 0
+    },
+    {
+      "steering_angle": 10.8834,
+      "speed": 0.5081,
+      "index": 1
+    },
+    {
+      "steering_angle": -3.0579,
+      "speed": 0.8593,
+      "index": 2
+    },
+    {
+      "steering_angle": -15.5633,
+      "speed": 0.719,
+      "index": 3
+    },
+    {
+      "steering_angle": -2.3627,
+      "speed": 0.7615,
+      "index": 4
+    },
+    {
+      "steering_angle": -11.9816,
+      "speed": 0.5898,
+      "index": 5
+    },
+    {
+      "steering_angle": -0.4916,
+      "speed": 0.5684,
+      "index": 6
+    },
+    {
+      "steering_angle": 21.4766,
+      "speed": 0.5122,
+      "index": 7
+    },
+    {
+      "steering_angle": 7.1551,
+      "speed": 0.6064,
+      "index": 8
+    },
+    {
+      "steering_angle": 9.8308,
+      "speed": 0.7218,
+      "index": 9
+    },
+    {
+      "steering_angle": -6.4425,
+      "speed": 0.5146,
+      "index": 10
+    },
+    {
+      "steering_angle": -12.9942,
+      "speed": 0.6638,
+      "index": 11
+    },
+    {
+      "steering_angle": -3.3755,
+      "speed": 0.7077,
+      "index": 12
+    },
+    {
+      "steering_angle": 5.4563,
+      "speed": 0.9272,
+      "index": 13
+    },
+    {
+      "steering_angle": 20.0422,
+      "speed": 0.5926,
+      "index": 14
+    },
+    {
+      "steering_angle": -2.3028,
+      "speed": 0.6544,
+      "index": 15
+    },
+    {
+      "steering_angle": 10.1554,
+      "speed": 0.55,
+      "index": 16
+    },
+    {
+      "steering_angle": 9.1559,
+      "speed": 0.8107,
+      "index": 17
+    },
+    {
+      "steering_angle": 3.1048,
+      "speed": 0.513,
+      "index": 18
+    },
+    {
+      "steering_angle": 30.0,
+      "speed": 0.5,
+      "index": 19
+    },
+    {
+      "steering_angle": -30.0,
+      "speed": 0.5,
+      "index": 20
+    }
+  ],
+  "sensor": [
+    "FRONT_FACING_CAMERA"
+  ],
+  "neural_network": "DEEP_CONVOLUTIONAL_NETWORK_SHALLOW",
+  "version": "5",
+  "training_algorithm": "clipped_ppo",
+  "action_space_type": "discrete",
+  "preprocess_type": "GREY_SCALE",
+  "regional_parameters": [
+    "0",
+    "0",
+    "0",
+    "0"
+  ]
+}
