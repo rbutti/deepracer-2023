@@ -1,0 +1,114 @@
+{
+  "action_space": [
+    {
+      "steering_angle": -13.1968,
+      "speed": 1.2567,
+      "index": 0
+    },
+    {
+      "steering_angle": -4.6622,
+      "speed": 2.893,
+      "index": 1
+    },
+    {
+      "steering_angle": 17.4796,
+      "speed": 1.1425,
+      "index": 2
+    },
+    {
+      "steering_angle": 2.8111,
+      "speed": 2.5611,
+      "index": 3
+    },
+    {
+      "steering_angle": 6.3197,
+      "speed": 1.4035,
+      "index": 4
+    },
+    {
+      "steering_angle": -1.7668,
+      "speed": 2.2732,
+      "index": 5
+    },
+    {
+      "steering_angle": -9.403,
+      "speed": 3.4023,
+      "index": 6
+    },
+    {
+      "steering_angle": 4.3934,
+      "speed": 1.075,
+      "index": 7
+    },
+    {
+      "steering_angle": 2.8381,
+      "speed": 3.2055,
+      "index": 8
+    },
+    {
+      "steering_angle": -3.6592,
+      "speed": 1.3792,
+      "index": 9
+    },
+    {
+      "steering_angle": 2.223,
+      "speed": 1.7941,
+      "index": 10
+    },
+    {
+      "steering_angle": 2.3076,
+      "speed": 3.8293,
+      "index": 11
+    },
+    {
+      "steering_angle": 14.2642,
+      "speed": 2.9556,
+      "index": 12
+    },
+    {
+      "steering_angle": 14.4465,
+      "speed": 1.7356,
+      "index": 13
+    },
+    {
+      "steering_angle": -14.3113,
+      "speed": 2.8882,
+      "index": 14
+    },
+    {
+      "steering_angle": -9.0624,
+      "speed": 1.793,
+      "index": 15
+    },
+    {
+      "steering_angle": -13.0478,
+      "speed": 2.3065,
+      "index": 16
+    },
+    {
+      "steering_angle": 10.2663,
+      "speed": 2.2758,
+      "index": 17
+    },
+    {
+      "steering_angle": 3.2764,
+      "speed": 2.8947,
+      "index": 18
+    },
+    {
+      "steering_angle": 30.0,
+      "speed": 1.0,
+      "index": 19
+    },
+    {
+      "steering_angle": -30.0,
+      "speed": 1.0,
+      "index": 20
+    }
+  ],
+  "sensor": [
+    "FRONT_FACING_CAMERA"
+  ],
+  "neural_network": "DEEP_CONVOLUTIONAL_NETWORK_SHALLOW",
+  "training_algorithm": "clipped_ppo"
+}

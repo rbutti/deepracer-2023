@@ -1,0 +1,114 @@
+{
+  "action_space": [
+    {
+      "steering_angle": 0.4258,
+      "speed": 3.9552,
+      "index": 0
+    },
+    {
+      "steering_angle": 0.1601,
+      "speed": 1.4357,
+      "index": 1
+    },
+    {
+      "steering_angle": 12.2113,
+      "speed": 2.2632,
+      "index": 2
+    },
+    {
+      "steering_angle": 11.3718,
+      "speed": 2.9165,
+      "index": 3
+    },
+    {
+      "steering_angle": -13.2017,
+      "speed": 1.9169,
+      "index": 4
+    },
+    {
+      "steering_angle": 4.5614,
+      "speed": 1.8251,
+      "index": 5
+    },
+    {
+      "steering_angle": 18.0865,
+      "speed": 1.4481,
+      "index": 6
+    },
+    {
+      "steering_angle": -1.2532,
+      "speed": 3.0388,
+      "index": 7
+    },
+    {
+      "steering_angle": -10.5009,
+      "speed": 2.7365,
+      "index": 8
+    },
+    {
+      "steering_angle": -7.7595,
+      "speed": 1.3524,
+      "index": 9
+    },
+    {
+      "steering_angle": 15.2003,
+      "speed": 1.862,
+      "index": 10
+    },
+    {
+      "steering_angle": -18.3233,
+      "speed": 1.3789,
+      "index": 11
+    },
+    {
+      "steering_angle": 9.2538,
+      "speed": 3.5556,
+      "index": 12
+    },
+    {
+      "steering_angle": 2.2948,
+      "speed": 2.5013,
+      "index": 13
+    },
+    {
+      "steering_angle": -4.7407,
+      "speed": 3.5505,
+      "index": 14
+    },
+    {
+      "steering_angle": 1.1527,
+      "speed": 2.0915,
+      "index": 15
+    },
+    {
+      "steering_angle": 7.5601,
+      "speed": 1.4383,
+      "index": 16
+    },
+    {
+      "steering_angle": -4.3204,
+      "speed": 1.7829,
+      "index": 17
+    },
+    {
+      "steering_angle": -7.7263,
+      "speed": 2.2866,
+      "index": 18
+    },
+    {
+      "steering_angle": 30.0,
+      "speed": 1.25,
+      "index": 19
+    },
+    {
+      "steering_angle": -30.0,
+      "speed": 1.25,
+      "index": 20
+    }
+  ],
+  "sensor": [
+    "FRONT_FACING_CAMERA"
+  ],
+  "neural_network": "DEEP_CONVOLUTIONAL_NETWORK_SHALLOW",
+  "training_algorithm": "clipped_ppo"
+}
