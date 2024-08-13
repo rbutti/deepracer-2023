@@ -1,0 +1,116 @@
+{
+  "action_space": [
+    {
+      "steering_angle": -10.733,
+      "speed": 3.015,
+      "index": 0
+    },
+    {
+      "steering_angle": 2.9822,
+      "speed": 2.1156,
+      "index": 1
+    },
+    {
+      "steering_angle": 2.2978,
+      "speed": 3.7321,
+      "index": 2
+    },
+    {
+      "steering_angle": -0.4605,
+      "speed": 2.3985,
+      "index": 3
+    },
+    {
+      "steering_angle": 3.9451,
+      "speed": 3.1646,
+      "index": 4
+    },
+    {
+      "steering_angle": -4.8929,
+      "speed": 2.1098,
+      "index": 5
+    },
+    {
+      "steering_angle": 1.6383,
+      "speed": 2.9547,
+      "index": 6
+    },
+    {
+      "steering_angle": 19.7236,
+      "speed": 2.144,
+      "index": 7
+    },
+    {
+      "steering_angle": 8.3958,
+      "speed": 2.627,
+      "index": 8
+    },
+    {
+      "steering_angle": 0.2498,
+      "speed": 2.6624,
+      "index": 9
+    },
+    {
+      "steering_angle": -0.6561,
+      "speed": 3.9629,
+      "index": 10
+    },
+    {
+      "steering_angle": 17.2964,
+      "speed": 2.7451,
+      "index": 11
+    },
+    {
+      "steering_angle": -10.4717,
+      "speed": 2.6377,
+      "index": 12
+    },
+    {
+      "steering_angle": -0.4958,
+      "speed": 3.4096,
+      "index": 13
+    },
+    {
+      "steering_angle": -13.1992,
+      "speed": 3.5495,
+      "index": 14
+    },
+    {
+      "steering_angle": 10.6945,
+      "speed": 2.0975,
+      "index": 15
+    },
+    {
+      "steering_angle": 14.5353,
+      "speed": 3.4916,
+      "index": 16
+    },
+    {
+      "steering_angle": -13.1582,
+      "speed": 2.2002,
+      "index": 17
+    },
+    {
+      "steering_angle": 8.3821,
+      "speed": 2.3057,
+      "index": 18
+    },
+    {
+      "steering_angle": 30.0,
+      "speed": 2.0,
+      "index": 19
+    },
+    {
+      "steering_angle": -30.0,
+      "speed": 2.0,
+      "index": 20
+    }
+  ],
+  "sensor": [
+    "FRONT_FACING_CAMERA"
+  ],
+  "neural_network": "DEEP_CONVOLUTIONAL_NETWORK_SHALLOW",
+  "training_algorithm": "clipped_ppo",
+  "action_space_type": "discrete",
+  "version": "5"
+}

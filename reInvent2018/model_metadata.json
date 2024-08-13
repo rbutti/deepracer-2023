@@ -1,0 +1,116 @@
+{
+  "action_space": [
+    {
+      "steering_angle": 17.945,
+      "speed": 2.4464,
+      "index": 0
+    },
+    {
+      "steering_angle": 3.4436,
+      "speed": 3.3327,
+      "index": 1
+    },
+    {
+      "steering_angle": 4.032,
+      "speed": 2.9593,
+      "index": 2
+    },
+    {
+      "steering_angle": -1.287,
+      "speed": 3.9808,
+      "index": 3
+    },
+    {
+      "steering_angle": 10.179,
+      "speed": 2.0471,
+      "index": 4
+    },
+    {
+      "steering_angle": -0.1043,
+      "speed": 2.4364,
+      "index": 5
+    },
+    {
+      "steering_angle": 20.6286,
+      "speed": 2.9084,
+      "index": 6
+    },
+    {
+      "steering_angle": -8.5648,
+      "speed": 3.3811,
+      "index": 7
+    },
+    {
+      "steering_angle": -3.06,
+      "speed": 3.0715,
+      "index": 8
+    },
+    {
+      "steering_angle": -0.9136,
+      "speed": 3.7119,
+      "index": 9
+    },
+    {
+      "steering_angle": 7.746,
+      "speed": 2.3935,
+      "index": 10
+    },
+    {
+      "steering_angle": 11.9813,
+      "speed": 3.0163,
+      "index": 11
+    },
+    {
+      "steering_angle": 5.7543,
+      "speed": 2.6779,
+      "index": 12
+    },
+    {
+      "steering_angle": -0.7285,
+      "speed": 2.0719,
+      "index": 13
+    },
+    {
+      "steering_angle": -9.9958,
+      "speed": 2.4285,
+      "index": 14
+    },
+    {
+      "steering_angle": 21.8834,
+      "speed": 2.0507,
+      "index": 15
+    },
+    {
+      "steering_angle": 15.1493,
+      "speed": 3.3593,
+      "index": 16
+    },
+    {
+      "steering_angle": -9.3328,
+      "speed": 2.8819,
+      "index": 17
+    },
+    {
+      "steering_angle": 13.1605,
+      "speed": 3.787,
+      "index": 18
+    },
+    {
+      "steering_angle": 30.0,
+      "speed": 2.0,
+      "index": 19
+    },
+    {
+      "steering_angle": -30.0,
+      "speed": 2.0,
+      "index": 20
+    }
+  ],
+  "sensor": [
+    "FRONT_FACING_CAMERA"
+  ],
+  "neural_network": "DEEP_CONVOLUTIONAL_NETWORK_SHALLOW",
+  "training_algorithm": "clipped_ppo",
+  "action_space_type": "discrete",
+  "version": "5"
+}
