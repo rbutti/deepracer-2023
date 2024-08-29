@@ -111,7 +111,7 @@ class Reward:
 
             return direction_diff
 
-        # Gives back indexes that lie between start and end index of a cyclical list 
+        # Gives back indexes that lie between start and end index of a cyclical list
         # (start index is included, end index is not)
         def indexes_cyclical(start, end, array_len):
             if start is None:
@@ -309,14 +309,14 @@ class Reward:
         reward = 1
 
         ## Reward if car goes close to optimal racing line ##
-        DISTANCE_MULTIPLE = 1
+        DISTANCE_MULTIPLE = 2  # Increased multiple for more strict line following
         dist = dist_to_racing_line(optimals[0:2], optimals_second[0:2], [x, y])
-        distance_reward = max(1e-3, 1 - (dist / (track_width * 0.5)))
+        distance_reward = max(1e-3, 1 - (dist / (track_width * 0.5)) ** 2)  # Quadratic punishment for deviation
         reward += distance_reward * DISTANCE_MULTIPLE
 
         ## Reward if speed is close to optimal speed ##
-        SPEED_DIFF_NO_REWARD = 1
-        SPEED_MULTIPLE = 3
+        SPEED_DIFF_NO_REWARD = 0.5
+        SPEED_MULTIPLE = 3  # Increased speed multiple to encourage faster driving
         speed_diff = abs(optimals[2] - speed)
         if speed_diff <= SPEED_DIFF_NO_REWARD:
             # we use quadratic punishment (not linear) bc we're not as confident with the optimal speed
@@ -328,8 +328,8 @@ class Reward:
 
         # Reward if less steps
         REWARD_PER_STEP_FOR_FASTEST_TIME = 1
-        STANDARD_TIME = 10
-        FASTEST_TIME = 7
+        STANDARD_TIME = 11
+        FASTEST_TIME = 8
         times_list = [row[3] for row in racing_track]
         projected_time = projected_time(self.first_racingpoint_index, closest_index, steps, times_list)
         try:
@@ -345,7 +345,7 @@ class Reward:
         # Zero reward if obviously wrong direction (e.g. spin)
         direction_diff = racing_direction_diff(
             optimals[0:2], optimals_second[0:2], [x, y], heading)
-        if direction_diff > 15:
+        if direction_diff > 30:
             reward = 1e-3
 
         # Zero reward of obviously too slow
@@ -353,17 +353,25 @@ class Reward:
         if speed_diff_zero > 0.5:
             reward = 1e-3
 
-        ## Incentive for finishing the lap in less steps ##
-        REWARD_FOR_FASTEST_TIME = 1500  # should be adapted to track length and other rewards
-        STANDARD_TIME = 10  # seconds (time that is easily done by model)
-        FASTEST_TIME = 7  # seconds (best time of 1st place on the track)
+        # Constants
+        MAX_REWARD = 1000  # Maximum reward for completing the track
+        REWARD_FOR_FASTEST_TIME = 1000  # Increase to make completing the lap faster more desirable
+        STANDARD_TIME = 37  # seconds (time that is easily done by the model)
+        FASTEST_TIME = 27  # seconds (best time of 1st place on the track)
+
+        # Calculate reward based on progress
+        progress_reward = (progress / 100) * MAX_REWARD
+
+        # Calculate finish reward based on fastest time
         if progress == 100:
             finish_reward = max(1e-3, (-REWARD_FOR_FASTEST_TIME /
                                        (15 * (STANDARD_TIME - FASTEST_TIME))) * (steps - STANDARD_TIME * 15))
         else:
             finish_reward = 0
-        reward += finish_reward
-
+        # Combine progress reward and finish reward
+        reward = progress_reward + finish_reward
+        # Ensure a minimum reward to avoid zero reward cases
+        reward = max(reward, 1e-3)
         ## Zero reward if off track ##
         if all_wheels_on_track == False:
             reward = 1e-3
